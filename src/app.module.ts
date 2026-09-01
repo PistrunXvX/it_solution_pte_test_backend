@@ -8,7 +8,7 @@ import { CvPreviewModule } from './cv_preview/cv_preview.module';
   imports: [
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
-      autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
+      autoSchemaFile: true,
       sortSchema: true,
       playground: true, 
       csrfPrevention: false,
