@@ -5,12 +5,6 @@ const prisma = new PrismaClient();
 
 async function main() {
 
-    await prisma.userProfile.deleteMany();
-    await prisma.skill.deleteMany();
-    await prisma.experience.deleteMany();
-    await prisma.project.deleteMany();
-
-
     const userProfile = await prisma.userProfile.create({
         data: {
             firstName: 'Евгений',
